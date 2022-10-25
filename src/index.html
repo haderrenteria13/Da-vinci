@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Fin Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fin Meta Tags-->
+    <!--Descripcion-->
+    <title>Hader Renteria 🧑🏿‍💻 | Da-vinci</title>
+    <link rel="shortcut icon" href="../assets/img/logo/logo.png" type="image/x-icon">
+    <!--Fin Descripcion-->
+    <!--Links CSS-->
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <!--Fin Links CSS-->
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!--Fin Google Fonts-->
+</head>
+<body>
+    <!--Loader-->
+    <div class="carga">
+        <div class="d-flex justify-content-center align-self-center">
+            <img src="../assets/img/logo/logo.png" alt="">
+        </div>
+    </div>
+    <!--Fin Loader-->
+
+    <!--Contenedor -->
+    <div class="container">
+        <!--Section Tools Izquierda-->
+        <section>
+            <!--Instrumentos Formas-->
+            <div class="row">
+                <label for="title">Figuras</label>
+                <ul class="options">
+                    <li class="option tool" id="rectangle">
+                        <img src="../assets/icons/rectangle.svg" alt="">
+                        <span>Rectangulo</span>
+                    </li>
+                    <li class="option tool" id="circle">
+                        <img src="../assets/icons/circle.svg" alt="">
+                        <span>Circulo</span>
+                    </li>
+                    <li class="option tool" id="triangle">
+                        <img src="../assets/icons/triangle.svg" alt="">
+                        <span>Triangulo</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color">
+                        <label for="fill-color">Rellenar</label>
+                    </li>
+                </ul>
+            </div>
+            <!--Fin Instrumentos Formas-->
+            <!--Instrumentos Opciones-->
+            <div class="row">
+                <label class="title">Opciones</label>
+                <ul class="options">
+                    <li class="option active tool" id="brush">
+                        <img src="../assets/icons/brush.svg" alt="">
+                        <span>Pincel</span>
+                    </li>
+                    <li class="option tool" id="eraser">
+                        <img src="../assets/icons/eraser.svg" alt="">
+                        <span>Borrador</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider" min="1" max="30" value="5">
+                    </li>
+                </ul>
+            </div>
+            <!--Fin Instrumentos Formas-->
+            <!--Instrumentos Colores-->
+            <div class="row colors">
+                <label class="title">Colores</label>
+                <ul class="options">
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                      <input type="color" id="color-picker" value="#4A98F7">
+                    </li>
+                </ul>
+            </div>
+            <!--Instrumentos Colores-->
+            <!--Grupo de Botones-->
+            <div class="row buttons">
+                <button class="clear-canvas">Borrar Todo</button>
+                <button class="save-img">Guardar Boceto</button>
+            </div>
+            <!--Fin Grupo de Botones-->
+        </section>
+        <!--Fin Section Tools Izquierda-->
+        <!--Section Lienzo Derecha-->
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+        <!--Fin Section Lienzo Derecha-->
+    </div>
+    <!--Fin Header -->
+
+     <!--JavaScript-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <script src="../assets/scrips/script.js"></script>
+     <!--Fin JavaScript-->
+ 
+     <!--Logica Loader-->
+     <script type="text/javascript">
+         $(window).load(function () {
+           $(".carga").fadeOut("slow");
+         });
+     </script>
+     <!--Fin Logica Loader-->
+</body>
+</html>
